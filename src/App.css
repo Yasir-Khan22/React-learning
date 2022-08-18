@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(110, 193, 226);
+}
+
+.tweet {
+    border: 2px solid red;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    justify-content: space-around;
+    flex-direction: column;
+}
