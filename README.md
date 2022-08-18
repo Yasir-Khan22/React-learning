@@ -1,5 +1,48 @@
 # React Learning Practical + Theoritcal
 
+## Components:
+
+<p>&nbsp<p>
+
+#### Components are resuable bits of code. They always work like javascript functions and always return HTML.
+
+<p>&nbsp<p>
+
+#### Components are like javascript functions. They accept arbitrary Inputs called `props` and return `React Elements` which tell browser what should appear on UI.
+
+<p>&nbsp<p>
+
+#### Components allow you to create UI and split it into different independent and reusable pieces, think of each piece in isolation.
+
+<p>&nbsp<p>
+
+#### There are two types of components.The component name must start with Capital Letter[1] StateFul and [2] StateLess.
+
+<p>&nbsp<p>
+
+#### In React, a stateful component is a component that holds some state. Stateless components, by contrast, have no state. Note that both types of components can use props In the example, there are two React components. The Store component is stateful and the Week component is stateless.
+
+```class Store extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { sell: 'anything' };
+  }
+  render() {
+    return <h1>I'm selling {this.state.sell}.</h1>;
+  }
+}
+
+class Week extends React.Component {
+  render() {
+    return <h1>Today is {this.props.day}!</h1>;
+  }
+}
+```
+
+## Class Component:
+
+### Class component must include statement like `extends React.Component()`. This statement creates inheritance to react component and has special access to React.Component's FUNCTIONS. Class component also require `render()` method which inturn returns `HTML`.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,5 +113,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# React-learning
