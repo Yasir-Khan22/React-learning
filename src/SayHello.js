@@ -7,7 +7,7 @@ function SayHello() {
     }
     return (
         <div>
-            <h1>Say Hello component</h1>
+            <h1>This is simple hello component</h1>
             <button onClick={hello}>Click</button>
         </div>
     )
