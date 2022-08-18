@@ -1,19 +1,13 @@
 import React from "react";
+import SayHello from "./SayHello";
 
 function App() {
-
-    const sayHello = () => {
-        console.log("Say Hello-world!")
-    };
-
-    const counter = 0;
     return (
         <div>
-            <h1>Hello world</h1>
-            <button onClick={sayHello}>Click 1</button>
-            <button>{counter}</button>
+            <h1>This is simple component</h1>
+            <SayHello />
         </div>
     )
 };
 
-export default App();
+export default App;
