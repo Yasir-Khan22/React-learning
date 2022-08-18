@@ -10,6 +10,11 @@ body {
     background: rgb(110, 193, 226);
 }
 
+.app {
+    height: 300px;
+    width: 300px;
+}
+
 .tweet {
     border: 2px solid red;
     height: 300px;
