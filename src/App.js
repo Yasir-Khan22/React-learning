@@ -1,11 +1,12 @@
 import React from "react";
-import SayHello from "./SayHello";
+import Tweet from "./Tweet";
+import "./App.css";
 
 function App() {
     return (
-        <div>
-            <h1>This is simple component</h1>
-            <SayHello />
+        <div className="tweet">
+            <Tweet />
+
         </div>
     )
 };
