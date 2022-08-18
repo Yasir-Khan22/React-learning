@@ -4,7 +4,7 @@ function App() {
 
     const sayHello = () => {
         console.log("Say Hello-world!")
-    }
+    };
 
     const counter = 0;
     return (
