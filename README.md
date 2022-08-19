@@ -43,7 +43,44 @@ class Week extends React.Component {
 
 ### Class component must include statement like `extends React.Component()`. This statement creates inheritance to react component and has special access to React.Component's FUNCTIONS. Class component also require `render()` method which inturn returns `HTML`.
 
-## Getting Started with Create React App
+# Function Component
+
+### Function Component also behaves the same way as Class component. Function component also returns `HTML`.But the difference is that functional component can be written with less code.
+
+```
+function Car() {
+  return (
+    <h1>This is simple functional Component<h1>
+    <h2>Hi! I'm Car <h2>
+  )
+}
+```
+
+# Props
+
+### Props are the special objects in React. props stands for `property`.Props are useful when the user has to pass data from one (`parent`) component to another (`child`)component.Props flow in one direction only from parent to child.
+
+```
+import Welcome from "./Welcome";
+
+function App() {
+  return (
+    <div>
+    <welcome name="Yasir"/>
+    <welcome name="Yasir"/>
+    <welcome  name="Yasir"/>
+    </div>
+  )
+}
+```
+
+```
+function Welcome(props) {
+  return (
+    <h1>Hello! {props.name}<h1>
+  )
+}
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -113,3 +150,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+
+```
