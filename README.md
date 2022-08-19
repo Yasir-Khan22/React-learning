@@ -82,6 +82,30 @@ function Welcome(props) {
 }
 ```
 
+# State
+
+### State is like a variable where we can store data. And this data will define the UI of react app upon render.React Component has a special object which is called `state`.State belongs to the component. upon changes , the component re-renders.Always use the `setState()` method to change the state object, it will ensure that the component knows its been `updated` and calls the `render()` method (and all the other `lifecycle methods`).
+
+#### Simple useState and setState example 👇
+
+```
+import React, { useState } from "./react";
+
+function Car() {
+
+  const [count, setCount]  = useState(0);
+
+  const Increment = () => {
+    setState(count + 1)
+  }
+
+  return (
+    <h1>This is simpe example of useState and setState<h1>
+    <button onClick={Increment}>{count } </button>
+  )
+}
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
