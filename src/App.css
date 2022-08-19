@@ -1,27 +1,19 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: rgb(110, 193, 226);
-}
-
 .app {
-    height: 300px;
-    width: 300px;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .tweet {
     border: 2px solid red;
     height: 300px;
     width: 300px;
+    border-radius: 30px;
+    color: turquoise;
     display: flex;
-    align-items: center;
-    background: #fff;
     justify-content: space-around;
+    align-items: center;
     flex-direction: column;
 }
