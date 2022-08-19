@@ -4,9 +4,9 @@ import Tweet from "./Tweet";
 function App() {
     return (
         <div className="app">
-            <Tweet />
-            <Tweet />
-            <Tweet />
+            <Tweet name="Yasir" />
+            <Tweet name="Zubair" />
+            <Tweet name="Fasihullah" />
         </div>
     )
 };
