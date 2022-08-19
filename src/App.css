@@ -1,17 +1,17 @@
 .app {
     min-height: 100vh;
-    background: #fff;
+    background: rgb(126, 187, 220);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .tweet {
-    border: 2px solid red;
+    border: 2px solid black;
     height: 300px;
     width: 300px;
     border-radius: 30px;
-    color: turquoise;
+    background: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
