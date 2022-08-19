@@ -8,8 +8,6 @@ function App() {
             <Tweet className="app" />
             <Tweet />
             <Tweet />
-
-
         </div>
     )
 };
