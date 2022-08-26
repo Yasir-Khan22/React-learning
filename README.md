@@ -1,6 +1,6 @@
 # React Learning Practical + Theoritcal
 
-## Components:
+# Components:
 
 <p>&nbsp<p>
 
@@ -39,7 +39,7 @@ class Week extends React.Component {
 }
 ```
 
-## Class Component:
+# Class Component:
 
 ### Class component must include statement like `extends React.Component()`. This statement creates inheritance to react component and has special access to React.Component's FUNCTIONS. Class component also require `render()` method which inturn returns `HTML`.
 
@@ -105,6 +105,8 @@ function Car() {
   )
 }
 ```
+
+# Hooks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
