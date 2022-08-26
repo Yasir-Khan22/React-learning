@@ -108,7 +108,37 @@ function Car() {
 
 # Hooks
 
-### Hooks are the React new feature introducted into new react version like 16. Hooks are normal functions which does'nt work in classes. Hook let you to "`Hook into`" React state, lifecycle and features of `function Component`. `useEffect` is used for encapsulating the code that has `side effects`.UseEffect is used with ComponentDidMount, componentDidUpdate, and ComponentWillUnmount.
+### Hooks are the React new feature introducted into new react version like 16. Hooks are normal functions which does'nt work in classes. Hook let you to "`Hook into`" React state, lifecycle and features of `function Component`. `useEffect` is used for encapsulating the code that has `side effects`.UseEffect is used with `ComponentDidMount`, `componentDidUpdate`, and `ComponentWillUnmount`.If you’re familiar with React class lifecycle methods, you can think of useEffect Hook as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined.
+
+#### useEffect accepts two arguments: 1.1 useEffect(function, dependency)
+
+#### Example
+
+```
+// Every rerender
+useEffect(() => {
+	console.log("I run everytime this component rerenders")
+});
+
+// onMount
+useEffect(() => {
+	console.log("I Only run once (When the component gets mounted)")
+}, []);
+
+// Condition based
+useEffect(() => {
+	console.log("I run everytime my condition is changed")
+}, [condition]);
+
+// Condition based with "clean up"
+useEffect(() => {
+	console.log("I run everytime my condition is changed")
+
+	return () => {
+    	console.log("Use this return as a 'clean up tool' (this runs before the actual code)")
+    }
+}, [condition]);
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
