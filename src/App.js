@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-
 const App = () => {
 
     const APP_ID = "f58c0a52";
     const APP_KEY = "ada6a423657b9c6bf2d4d33ff0d58a13";
 
-    // useEffect(() => {
-    //     getRecipes();
-    // })
+    useEffect(() => {
+        getRecipes();
+    })
 
     const getRecipes = async () => {
         const response = await fetch(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&pp_key=${APP_KEY}`);
