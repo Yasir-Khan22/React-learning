@@ -108,6 +108,8 @@ function Car() {
 
 # Hooks
 
+### Hooks are the React new feature introducted into new react version like 16. Hooks are normal functions which does'nt work in classes. Hook let you to "`Hook into`" React state, lifecycle and features of `function Component`. `useEffect` is used for encapsulating the code that has `side effects`.UseEffect is used with ComponentDidMount, componentDidUpdate, and ComponentWillUnmount.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
